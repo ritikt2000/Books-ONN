@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block title %}Dashboard - Books_ONN{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="text-highlight">Welcome to your Dashboard, {{ session.username }}!</h1>
+    <p>This is a protected area. Only logged-in users can see this.</p>
+    <p>You can manage your account settings or view personalized content here (to be implemented).</p>
+    <a href="{{ url_for('recommend_ui') }}" class="btn btn-primary mt-3">Get Book Recommendations</a>
+</div>
+{% endblock %}
